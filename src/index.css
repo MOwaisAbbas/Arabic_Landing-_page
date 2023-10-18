@@ -2,19 +2,6 @@
 
 * {
   font-family: 'Almarai', sans-serif;
-
+  scroll-behavior: smooth;
 }
 
-.slider-item {
-  display: none;
-}
-
-#slider img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Add Tailwind classes for styling */
-#slider.active .slider-item {
-  display: block;
-}

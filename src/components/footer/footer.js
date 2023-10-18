@@ -6,23 +6,23 @@ import logoWhite from "../../assets/logo s2 3.png"
 
 function Footer() {
     return (<>
-        <div className="h-80 bg-custum-pri flex flex-col justify-end">
-            <div className="flex ites-center justify-between p-10 px-20">
-                <div className="w-3/12 text-white text-right">
-                    <p className="p-6">
+        <div className=" bg-custum-pri   flex flex-col justify-end">
+            <div className="flex sm:flex-row flex-col ites-center justify-between p-5 px-20">
+                <div className="lg:w-3/12 sm:w-4/12 sm:order-1 order-2 text-white sm:text-right text-center">
+                    <p className="md:text-sm text-sm p-6">
                         الأحكام والشروط
                     </p>
-                    <p className="text-2xl font-bold px-6">
+                    <p className="md:text-2xl text-md font-bold px-6">
                         تنزيل التطبيق
                     </p>
-                    <div className="flex items-center justify-end gap-3 p-6">
-                        <button className="bg-white p-3 rounded-full"><img src={huawei} alt="" /></button>
-                        <button className="bg-white p-3 rounded-full"><img src={apple} alt="" /></button>
-                        <button className="bg-white p-3 rounded-full"><img src={playStore} alt="" /></button>
+                    <div className="md:flex items-center justify-end  gap-3 md:p-6">
+                        <button className="bg-white md:m-0 mt-5 mx-1 p-3 rounded-full"><img src={huawei} alt="" /></button>
+                        <button className="bg-white md:m-0 mt-5 mx-1 p-3 rounded-full"><img src={apple} alt="" /></button>
+                        <button className="bg-white md:m-0 mt-5 mx-1 p-3 rounded-full"><img src={playStore} alt="" /></button>
                     </div>
                 </div>
-                <div className="w-3/12 text-right" >
-                    <div className="text-white flex items-center justify-end gap-5">
+                <div className="lg:w-3/12 sm:w-2/4 sm:order-2 order-1 sm:text-right text-center" >
+                    <div className="text-white flex items-center sm:justify-end justify-center gap-5">
                         <p className="text-2xl font-bold">منصة الجار للجار</p>
                         <img src={logoWhite} alt="" />
                     </div>
