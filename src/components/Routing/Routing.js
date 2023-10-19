@@ -1,30 +1,9 @@
 import { BrowserRouter, Route, Router, Routes } from "react-router-dom"
-import { ErrorMessage, Field, Formik } from 'formik';
-
-import Rules from "../item/rules";
-import Home from "../item/Home";
-import FormSection from "../item/Form";
-import Headeer from "../header/Header";
-import Footer from "../footer/footer";
-
-function PageOne() {
-
-    return (<>
-        <Headeer />
-        <Home />
-        <FormSection />
-        <Footer />
-
-    </>);
-}
-function PageTwo() {
-    return (<>
-        <Headeer />
-        <Home />
-        <Rules />
-        <Footer />
-    </>);
-}
+import PageOne from "../pages/PageOne";
+import PageTwo from "../pages/pageTwo";
+import PageThree from "../pages/PageThree";
+import PageFour from "../pages/PageFour";
+import PageFive from "../pages/PageFive";
 
 
 
@@ -33,7 +12,10 @@ function Routing() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<PageOne />} />
-                <Route path="/List" element={<PageTwo />} />
+                <Route path="/list" element={<PageTwo />} />
+                <Route path="/login" element={<PageThree/>} />
+                <Route path="/verify" element={<PageFour/>} />
+                <Route path="/signup" element={<PageFive/>} />
             </Routes>
         </BrowserRouter >
     );

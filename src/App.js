@@ -7,17 +7,9 @@ function App() {
 
   return (
     <div >
-
       <div className='2xl:container mx-auto'>
-    
-         
-
-          <Routing />
-        
-      
+        <Routing />
       </div>
-
-
     </div>
   );
 }
