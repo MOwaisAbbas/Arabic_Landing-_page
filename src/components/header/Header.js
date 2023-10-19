@@ -10,16 +10,17 @@ function Headeer() {
         <div className="w-1/2 flex lg:justify-between justify-end" >
           <ul className="md:w-1/2 w-1/3 lg:flex items-center lg:visible hidden md:justify-evenly " >
             <li className="text-lg	lg:visible sm:invisible  invisible">
+              <NavLink to={"/list"}>
 
-
-
-              تواصل معنا
-
+                تواصل معنا
+              </NavLink>
 
             </li>
             <li className='text-lg	lg:visible sm:invisible  invisible'>
+              <NavLink to={"/"}>
 
-              عن المنصة
+                عن المنصة
+              </NavLink>
 
             </li>
           </ul>
@@ -30,7 +31,7 @@ function Headeer() {
             </div>
           </div>
         </div>
-      </div>
+      </div >
     </>
   );
 }
